@@ -15,7 +15,7 @@ class DataGeneratorTest {
     @Test
     void shouldCard() {
         Configuration.holdBrowserOpen = true;
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         $("[data-test-id='city']  input").setValue(DataGenerator.generateCity());
         $("[data-test-id='date']  input").doubleClick().sendKeys(Keys.BACK_SPACE);
 
